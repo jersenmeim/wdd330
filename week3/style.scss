@@ -1,0 +1,45 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    a{
+        color: rgb(112, 19, 47);
+        text-decoration: none;
+    }
+}
+
+//mountain
+.mount{
+    text-align: center;
+
+    #mountains{
+        #mountain-table{
+            margin: auto;
+        }
+    }
+}
+
+//tabs
+
+.tabs{
+    margin: auto;
+    text-align: center;
+}
+
+//notes
+
+.notes{
+    text-align: center;
+
+    table{
+        margin: auto;
+        text-align: left;
+    }
+
+    .section{
+        border: 1px solid black;
+        margin: 10px;
+        padding: 2%;
+    }
+}

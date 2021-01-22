@@ -6,6 +6,11 @@ const week = [{
     title: "Week 2",
     link : "weektwo.html",
   },
+
+  {
+    title: "Week 3",
+    link : "weekthree.html",
+  },
   
 ];
 
