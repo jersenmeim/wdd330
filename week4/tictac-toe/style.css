@@ -1,0 +1,60 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  height: 100vh;
+}
+
+main .container {
+  width: 250px;
+  height: 250px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .container .box {
+  text-align: center;
+  font-size: 4.2em;
+}
+
+main .container .one, main .container .four {
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+main .container .three, main .container .six {
+  border-left: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+main .container .two {
+  border-bottom: 1px solid red;
+}
+
+main .container .five {
+  border-bottom: 1px solid red;
+}
+
+main .container .seven {
+  border-right: 1px solid red;
+}
+
+main .container .nine {
+  border-left: 1px solid red;
+}
+/*# sourceMappingURL=style.css.map */

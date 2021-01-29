@@ -1,0 +1,39 @@
+#search input, #search button {
+  padding: 6px;
+}
+
+#search button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 7px;
+}
+
+#container form {
+  display: block;
+}
+
+#container form label {
+  display: block;
+  width: 200px;
+}
+
+#container form label input, #container form label select {
+  padding: 6px;
+}
+
+#container form button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+#container #info {
+  margin: 10px 0;
+}
+
+#container img {
+  width: 20%;
+}
+/*# sourceMappingURL=style.css.map */

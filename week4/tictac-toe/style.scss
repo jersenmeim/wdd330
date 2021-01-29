@@ -1,0 +1,48 @@
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+
+    .container{
+        width: 250px;
+        height: 250px;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+        .box{
+            text-align: center;
+            font-size: 4.2em;
+        }
+        
+        .one, .four{
+            border-right: 1px solid red;
+            border-bottom: 1px solid red;
+        }
+        .three, .six{
+            border-left: 1px solid red;
+            border-bottom: 1px solid red;
+        }
+
+        .two{
+            border-bottom: 1px solid red;
+        }
+
+        .five{
+            border-bottom: 1px solid red;
+        }
+        .seven{
+            border-right: 1px solid red;
+        }
+
+        .nine{
+            border-left: 1px solid red;
+        }
+    }
+}
+
+

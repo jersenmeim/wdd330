@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <title>Code Example</title>
+</head>
+
+<body>
+	
+		
+	<section>
+		<h3><a href="../../weekfour.html">Return</a></h3>
+			<div>
+			<h3>Search Example</h3>
+			<form name="search" action="/search" id="search">
+				<input name="searchInput" placeholder="search?">
+				<button type="submit">Search</button>
+				<button type="reset">Reset</button>
+			</form>
+		</div>
+				
+				
+				
+		<div id="container">
+			<h3>Create a Character</h3>
+			<form id="Character-form">
+				<label for="name">Name:
+					<input type="text" id="name" name="name" autofocus placeholder="Your Adventurer's Name" maxlength="32">
+				</label><br>
+				<label for="race">Type: &nbsp;
+					<select name="race" id="race">
+						<option value="" selected disabled>Choose a Race</option>
+						<option value="swordsman">swordsman</option>
+						<option value="dwarf">Dwarf</option>
+						<option value="elf">Elf</option>
+						<option value="human">Human</option>
+					</select>
+				</label><br>
+				<button type="button" onclick="createAdventurer()">Create</button>
+			</form>
+			<div id="info"></div>
+			<img id="img">
+		</div>
+			
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
