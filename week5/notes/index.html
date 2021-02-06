@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+    <h3><a href="../../weekfive.html">Return</a></h3>
+    <main>
+        <p>
+            This week I learned about testing and debugging inside the Javascript Language. 
+            There are different types of errors in programming
+            (a) Syntax Errors, (b) Runtime Errors, and (c) Logical Errors.
+        </p>
+        <ol>
+            <li>Syntax Errors -  parsing errors, occur at compile time in traditional programming languages and at interpret time in JavaScript.</li>
+            <li>Runtime Errors - errors that cause a program to terminate abnormally</li>
+            <li>Logic Errors - occur when a program does not perform the way it was intended to</li>
+        </ol>
+        <p>
+            It's important to be able to recognize what errors we have so that we can properly
+            test and debug them.
+        </p>
+        <h3>The try...catch...finally Statement</h3>
+
+        <p>
+            The try block must be followed by either exactly one catch block or one finally block (or one of both). When an exception occurs in the try block, the exception is placed in e and the catch block is executed. The optional finally block executes unconditionally after try/catch.
+        </p>
+
+        <p>
+            <textarea cols="100" rows="20">   &lt;script type = "text/javascript"&gt;
+                &lt;!--
+                   try {
+                      // Code to run
+                      [break;]
+                   } 
+                   
+                   catch ( e ) {
+                      // Code to run if an exception occurs
+                      [break;]
+                   }
+                   
+                   [ finally {
+                      // Code that is always executed regardless of 
+                      // an exception occurring
+                   }]
+                //--&gt;
+             &lt;/script&gt;</textarea>
+        </p>
+        <h3>Console.log()</h3>
+        <p>
+            One debugging method is <i>console.log()</i>. Using this allows us to display a value in
+            the console so we can see what value is being claculated and can see if it's our desired outcome.</p>
+        <p>
+            a = 1; <br>
+            b = 2; <br>
+            c = a + b; <br>
+            console.log(c); <br>
+            //3
+        </p>
+        <p>
+            By doing this we will see that c is equal to c and and know whether or our program is working
+            correctly or not.
+        </p>
+        <h3>Breakpoints</h3>
+        <p>
+            Another method is by setting breakpoints. We can set breakpoints and when our code runs into one,
+            it will stop executing and we can see the current values. We can then resume the program.
+        </p>
+        <h3>Debugger Keyword</h3>
+        <p>
+            The <i>debugger</i> keyword is similar to settting a breakpoint. It stops the execution of
+            the program where it is placed before continuing.
+        </p>
+        <p>
+            var x = 15 * 5; <br>
+            debugger; <br>
+            document.getElementById("demo").innerHTML = x;
+        </p>
+
+    
+    </main>
+</body>
+</html>
