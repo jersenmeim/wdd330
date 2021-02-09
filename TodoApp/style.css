@@ -2,7 +2,7 @@
   pointer-events: none;
 }
 
-.completed {
+.completed, .completed:not(.trash-btn) {
   text-decoration: line-through;
 }
 
@@ -106,16 +106,15 @@ a {
   border-radius: 50%;
   padding: 8px;
   border: none;
+  background-color: #3f953f;
+  color: white;
 }
 
 .container .todo-container .todo-list .todo .trash-btn {
   font-size: 17px;
   border: none;
   background: transparent;
-}
-
-.container .todo-container .todo-list .todo .trash-btn::before {
-  content: "Delete ";
+  color: #a22323;
 }
 
 .container .todo-container .todo-list .todo .todo-item {
