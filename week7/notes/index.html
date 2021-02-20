@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+    <h3><a href="../../weekseven.html">Return</a></h3>
+    <main>
+        <section class="mainsection">
+            <h3>Chapter 11</h3>
+            
+            <p>
+                The chapter explained the role of functions. In Javascript, functions are first-class objects, which
+                means they can be passed around in the same way as every other value. They can have their own 
+                properties and methods, as well as accepting other functions. 
+            </p>
+          
+            <h4>Memoization</h4>
+
+            <p>Memoization is an optimization technique that speeds up applications by storing the results of expensive function calls and returning the cached result when the same inputs are supplied again.</p>
+
+            <p>With memoization, when a function is provided an input, it does the required computation and stores the result to cache before returning the value. If this same input is ever received in the future, it wouldn't have to do it over and over again. It would simply provide the answer from cache(memory).</p>
+            
+            <h4>Recursive Functions</h4>
+            <p>is a function that calls itself during its execution. 
+            The process may repeat several times, outputting the result and the end of each iteration. </p>
+           
+            <h4>Pure, Higher-Order, and Curried Functions</h4>
+            <p>A <b>Pure function</b>  is just a combination of its arguments.</p>
+            <p> <b>Higher-order</b> functions are key to parameterizing code by behavior. They allow us to define common programming patterns and write functions about functions.</p>
+            <p><b>Currying</b> transforms a function with many arguments into a series of functions that each take one argument.</p>
+            <p><b>Partial</b> application means binding some arguments to a function without fully evaluating it. </p>
+            
+         
+
+            
+            <h3>Chapter 13</h3>
+            <h4>Ajax</h4>
+
+                <p> AJAX is not a programming language.</p> 
+                <p> AJAX is a technique for accessing web servers from a web page.</p>
+                <p> AJAX stands for Asynchronous JavaScript And XML.</p>
+
+               
+
+           
+                
+            <h4>APIs</h4>
+
+            <p>Allow developers to create complex functionality more easily. They abstract more complex code away from you, providing some easier syntax to use in its place</p>
+              
+            <h4>JSON Responses</h4>
+            <p>As long as the response from the server is written in JSON format, you can parse the string into a JavaScript object.</p>
+         
+        </section>
+
+        <section>
+            <h2>Question</h2>
+            <h3>When to Memoization?</h3>
+            
+    <p>For expensive function calls i.e functions that carry out heavy computations.</p> 
+    <p> For functions with a limited and highly recurring input range such that cached values don't just sit there and do nothing.</p> 
+    <p> For recursive functions with recurring input values.</p>
+    <p> For pure functions i.e functions that return the same output each time they are called with a particular input.</p>
+   
+   
+
+
+        </section>
+
+    
+    </main>
+</body>
+</html>

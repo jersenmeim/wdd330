@@ -26,6 +26,11 @@ const week = [{
     title: "Todo App",
     link : "./TodoApp/index.html",
   },
+
+  {
+    title: "Week 7",
+    link : "weekseven.html",
+  },
   
 ];
 

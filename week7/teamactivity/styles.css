@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 2%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+
+
+.hikeStyles li section{
+    /* display: grid; */
+    border: 1pt solid black;
+    margin-bottom: 1em;
+    
+  }
+  .hikeStyles{
+    list-style: none;
+    padding: 0 1em;
+  }
+  .hikeStyles h2{
+    background-color: gray;
+    text-align: center;
+    padding: 1em;
+  }
+  h1{
+    text-align: center;
+  }
+  .flex{
+    display: flex;
+  }
+  .image{
+    width: 50%;
+  }
+  .flex>div:nth-child(2){
+    width: 50%;
+    margin-left: 2em;
+    margin-right: 0;
+  }
+  .hidden{
+    display: none;
+  }
+  .modal{
+    padding: 2%;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+  }
+  .closeBtn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .comment-box{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .comment-box textarea{
+    width: 80%;
+    height: 50px;
+  }
+  .comment-box button{
+    width: 20%;
+  }
