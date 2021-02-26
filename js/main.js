@@ -32,6 +32,11 @@ const week = [{
     link : "weekseven.html",
   },
   
+  {
+    title: "Week 8",
+    link : "weekeight.html",
+  }
+  
 ];
 
 week.forEach(week => {

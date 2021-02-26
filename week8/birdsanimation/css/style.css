@@ -1,0 +1,192 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  z-index: 1;
+  background-blend-mode: multiply;
+}
+
+.bird {
+  background-image: url(../assets/bird-cells.svg);
+  background-size: auto 100%;
+  width: 88px;
+  height: 125px;
+  border: 1px solid red;
+  will-change: background-position;
+  -webkit-animation-name: fly-cycle;
+          animation-name: fly-cycle;
+  -webkit-animation-timing-function: steps(10);
+          animation-timing-function: steps(10);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
+}
+
+@-webkit-keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+
+@keyframes fly-cycle {
+  100% {
+    background-position: -900px 0;
+  }
+}
+
+.bird-container {
+  border: 1px solid black;
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  will-change: transform;
+  -webkit-animation-name: fly-movement;
+          animation-name: fly-movement;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+@-webkit-keyframes fly-movement {
+  0% {
+    -webkit-transform: scale(0.3) translateX(-10vw);
+            transform: scale(0.3) translateX(-10vw);
+  }
+  10% {
+    -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
+            transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
+            transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
+  30% {
+    -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
+            transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
+  40% {
+    -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
+            transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
+  50% {
+    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
+            transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+  60% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+  100% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+
+@keyframes fly-movement {
+  0% {
+    -webkit-transform: scale(0.3) translateX(-10vw);
+            transform: scale(0.3) translateX(-10vw);
+  }
+  10% {
+    -webkit-transform: translateY(2vh) translateX(10vw) scale(0.4);
+            transform: translateY(2vh) translateX(10vw) scale(0.4);
+  }
+  20% {
+    -webkit-transform: translateY(0vh) translateX(30vw) scale(0.5);
+            transform: translateY(0vh) translateX(30vw) scale(0.5);
+  }
+  30% {
+    -webkit-transform: translateY(4vh) translateX(50vw) scale(0.6);
+            transform: translateY(4vh) translateX(50vw) scale(0.6);
+  }
+  40% {
+    -webkit-transform: translateY(2vh) translateX(70vw) scale(0.6);
+            transform: translateY(2vh) translateX(70vw) scale(0.6);
+  }
+  50% {
+    -webkit-transform: translateY(0vh) translateX(90vw) scale(0.6);
+            transform: translateY(0vh) translateX(90vw) scale(0.6);
+  }
+  60% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+  100% {
+    -webkit-transform: translateY(0vh) translateX(110vw) scale(0.6);
+            transform: translateY(0vh) translateX(110vw) scale(0.6);
+  }
+}
+
+@keyframes fly-movement {
+  0% {
+  }
+  10% {
+  }
+  20% {
+  }
+  30% {
+  }
+  40% {
+  }
+  50% {
+  }
+  60% {
+  }
+  100% {
+  }
+}
+
+@keyframes fly-movement {
+  0% {
+    -webkit-transform: translateX(-10vw);
+            transform: translateX(-10vw);
+  }
+  10% {
+    -webkit-transform: translateY(2vh) translateX(10vw);
+            transform: translateY(2vh) translateX(10vw);
+  }
+  20% {
+    -webkit-transform: translateY(0vh) translateX(30vw);
+            transform: translateY(0vh) translateX(30vw);
+  }
+  30% {
+    -webkit-transform: translateY(4vh) translateX(50vw);
+            transform: translateY(4vh) translateX(50vw);
+  }
+  40% {
+    -webkit-transform: translateY(2vh) translateX(70vw);
+            transform: translateY(2vh) translateX(70vw);
+  }
+  50% {
+    -webkit-transform: translateY(0vh) translateX(90vw);
+            transform: translateY(0vh) translateX(90vw);
+  }
+  60% {
+    -webkit-transform: translateY(0vh) translateX(110vw);
+            transform: translateY(0vh) translateX(110vw);
+  }
+  100% {
+    -webkit-transform: translateY(0vh) translateX(110vw);
+            transform: translateY(0vh) translateX(110vw);
+  }
+}
+
+.about-privacy {
+  background-color: #5b5246;
+  color: white;
+  width: 50%;
+  padding: 2%;
+}
+/*# sourceMappingURL=style.css.map */
