@@ -1,7 +1,7 @@
 //Query Selectors
-var backButton = document.getElementById('offcon');
-var prev = document.getElementById('previous');
-var next = document.getElementById('next');
+let backButton = document.getElementById('offcon');
+let prev = document.getElementById('previous');
+let next = document.getElementById('next');
 
 
 //Add Event Listener
