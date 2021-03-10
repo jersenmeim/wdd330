@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+
+<body>
+    <h3><a href="../../weekten.html">Return</a></h3>
+    <main>
+        <section class="mainsection">
+            <h2>Notes</h2>
+            <h4>MDN: Validating forms (TOPIC)</h4>
+            <ul>
+                <li>Validation done in the browser is called client-side validation</li>
+                <li>Validation done on the server is called server-side validation</li>
+                <li>We want to get the right data, in the right format</li>
+                <li>We want to protect our users' data</li>
+                <li>We want to protect ourselves</li>
+            </ul>
+            <h4>HTML5 Validation</h4>
+            <ul>
+                <li>required</li>
+                <li>minlength and maxlength for texual data</li>
+                <li>min and max for numerical input</li>
+                <li>type specifies number, email, or other types</li>
+                <li>pattern regular expression (regex)</li>
+                <li>CSS :valid, :invalid, :out-of-range</li>
+                <li>see code</li>
+            </ul>
+            <p>
+                Built-in form validation
+                <ul>
+                    <li>required: Specifies whether a form field needs to be filled in before the form can be submitted.
+                    </li>
+                    <li>minlength and maxlength: Specifies the minimum and maximum length of textual data (strings)</li>
+                    <li>min and max: Specifies the minimum and maximum values of numerical input types</li>
+                    <li>type: Specifies whether the data needs to be a number, an email address, or some other specific
+                        preset type</li>
+                    <li>pattern: Specifies a regular expression that defines a pattern the entered data needs to follow
+                    </li>
+                </ul>
+            </p>
+            <h4>Validating forms using JavaScript</h4>
+            <ul>
+                <li>constraint validation API</li>
+                <li>validationMessage returns localized message describing the validation constraints that the control
+                    doesn't satisfy</li>
+                <li>validity returns a ValidityState object that contains several properties describing the validity
+                    state of the element</li>
+                <li>patternMismatch</li>
+                <li>tooLong</li>
+                <li>tooShort</li>
+                <li>rangeOverflow</li>
+                <li>rangeUnderflow</li>
+                <li>typeMismatch</li>
+                <li>valid</li>
+                <li>valueMissing</li>
+                <li>willValidate</li>
+                <li>checkValidity()</li>
+                <li>setCustomValidity(message)</li>
+                <li>see code</li>
+                <li>novalidate turns off the browser's automatic validation</li>
+            </ul>
+            <p>Validating against a regular expression
+                <ul>
+                    <li>A regular expression (regex) is a pattern that can be used to match character combinations in
+                        text strings, so regexs are ideal for form validation and serve a variety of other uses in
+                        JavaScript</li>
+                </ul>
+            </p>
+            <h4>Valdiation With API</h4>
+            <p>Validating HTTP Response Codes
+                <ul>
+                    <li>The status code normally associated with a successful response is 200 (“OK”). However, all 2xx
+                        status codes indicate that from the server’s point of view a valid request was received, it was
+                        processed, and an appropriate response was delivered to the client. The 2xx status codes that
+                        are greater than 200 provide additional information about the processing performed by the
+                        targeted server, or by a proxy server along the Internet path between the client and the target
+                        server</li>
+                </ul>
+            </p>
+            <p>Validating HTTP Headers
+                <ul>
+                    <li>Examining the HTTP Headers that are returned with an API’s response is another way to
+                        validate that an API is functioning properly</li>
+                </ul>
+            </p>
+
+    </main>
+</body>
+
+</html>

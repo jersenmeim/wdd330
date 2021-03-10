@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+
+<body>
+    <h3><a href="../../weekten.html">Return</a></h3>
+    <main>
+        <section class="mainsection">
+
+            <h2>Notes</h2>
+            <h4>MDN: Using Fetch</h4>
+            <ul>
+                <li>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP
+                    pipeline, such as requests and responses</li>
+                <li>fetch() won’t reject on HTTP error status</li>
+                <li>fetch() can receive cross-site cookies</li>
+                <li>fetch won’t send cookies</li>
+                <li>The fetch() method can optionally accept a second parameter, an init object that allows you to
+                    control a number of different settings</li>
+                <li>To cause browsers to send a request with credentials included, even for a cross-origin call, add
+                    credentials: 'include' to the init object you pass to the fetch() method</li>
+            </ul>
+            <p>Headers
+                <ul>
+                    <li>The Headers interface allows you to create your own headers object via the Headers()
+                        constructor. A headers object is a simple multi-map of names to values</li>
+                    <li>All of the Headers methods throw a TypeError if a header name is used that is not a valid HTTP
+                        Header name</li>
+                    <li>The mutation operations will throw a TypeError if there is an immutable guard</li>
+                </ul>
+            </p>
+            <p>Response objects
+                <ul>
+                    <li>Response instances are returned when fetch() promises are resolved</li>
+                    <li>The Response() constructor takes two optional arguments — a body for the response, and an init
+                        object</li>
+                </ul>
+            </p>
+            <p>Supplying request options
+                <ul>
+                    <li>response.text() – read the response and return as text,</li>
+                    <li>response.json() – parse the response as JSON,</li>
+                    <li>response.formData() – return the response as FormData object ,</li>
+                    <li>response.blob() – return the response as Blob</li>
+                    <li>response.arrayBuffer() – return the response as ArrayBuffer</li>
+                </ul>
+
+                <p> init argument is an object whose properties can be set as follows:</p>
+                <li> <b>method:</b> A string to set request’s method.</li>
+                <li> <b>headers:</b> A Headers object, an object literal, or an array of two-item arrays to set
+                    request’s headers.
+                </li>
+                <li> <b> body:</b> A BodyInit object or null to set request’s body.
+
+                </li>
+                <li> <b> referrer:</b> A string whose value is a same-origin URL, about:client, or the empty string, to
+                    set request’s referrer.
+
+                </li>
+                <li> <b> referrerPolicy:</b> A referrer policy to set request’s referrerPolicy.</li>
+                <li> <b>headers:</b> A Headers object, an object literal, or an array of two-item arrays to set
+                    request’s headers.
+                </li>
+                <li> <b> mode:</b> A string to indicate whether the request will use CORS, or will be restricted to
+                    same-origin URLs. Sets
+                    request’s mode. If input is a string, it defaults to "cors".
+                </li>
+                <li> <b>credentials:</b> A string indicating whether credentials will be sent with the request always,
+                    never, or only when sent
+                    to a same-origin URL — as well as whether any credentials sent back in the response will be used
+                    always,
+                    never, or only when received from a same-origin URL. Sets request’s credentials. If input is a
+                    string,
+                    it defaults to "same-origin".
+                </li>
+                <li> <b> cache:</b> A string indicating how the request will interact with the browser’s cache to set
+                    request’s cache.
+
+                </li>
+                <li> <b> redirect:</b> A string indicating whether request follows redirects, results in an error upon
+                    encountering a redirect, or returns the redirect (in an opaque fashion). Sets request’s redirect.
+
+                </li>
+                <li> <b>integrity:</b>A cryptographic hash of the resource to be fetched by request. Sets request’s
+                    integrity.
+                </li>
+                <li> <b>keepalive:</b> A boolean to set request’s keepalive.
+                </li>
+                <li> <b>signal:</b>An AbortSignal to set request’s signal.
+                </li>
+                <li> <b>window:</b> Can only be null. Used to disassociate request from any Window.
+                </li>
+                <li> <b>request . method :</b> Returns request’s HTTP method, which is "GET" by default.
+                </li>
+                <li> <b>request . url :</b> Returns the URL of request as a string.
+                </li>
+                <li> <b>request . headers :</b>Returns a Headers object consisting of the headers associated with
+                    request. Note that headers added in the network layer by the user agent will not be accounted for in
+                    this object, e.g., the "Host" header.
+                </li>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Local Quakes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Staatliches&display=swap" rel="stylesheet">
+  
+    <style>
+      .quakeStyles {
+        list-style-type: none;
+        padding-left: 0;
+      }
+      .quakeStyles li {
+        margin: .5rem auto;
+        background-color: violet;
+        text-align: center;
+        padding: 2rem;
+        cursor: pointer;
+        max-width: 600px;
+      }
+      .quakeStyles div {
+        font-size: 0.8em;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .red {
+        color: rgb(167, 0, 0);
+        text-align: center;
+      }
+
+      .nopointer {
+        cursor: default;
+      }
+
+      p {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <heading>
+          <nav><ul id="mainNav"></ul></nav>
+        </heading>
+      </nav>
+    </header>
+    <main id="content">
+      <h1>Quake List</h1>
+      <p>The displays earthquakes within 1000 miles of your current location</p>
+      <p>Click for more details on a quake. (Not all quakes have details)</p>
+      <div class="hidden" id="back"><a onclick='reset()'><button>Back</button></a></div>
+
+      <ul id="quakeList" class="quakeStyles"></ul>
+    </main>
+    
+
+
+    <div class="btn hidden" id="backtoindex"><a href="index.html"><button>Back to Week 10</button></a></div>
+    <script>
+      function reset() {
+        window.location.reload();
+      }
+    </script>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
