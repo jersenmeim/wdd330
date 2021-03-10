@@ -4,40 +4,40 @@ document.addEventListener('keydown', play);
 document.addEventListener('keydown', down);
 
 
-function play(e){
-  let audio = document.querySelector(`audio[data-key="${e.which}"]`); 
-  
+function play(e) {
+
+
+  let audio = document.querySelector(`audio[data-key="${e.which}"]`);
+
   try {
     audio.currentTime = 0;
     audio.play();
-  }
-
-  catch(err) {
+  } catch (err) {
     console.log("audio not found")
   }
 }
 
 function down(e) {
+
   let div = document.querySelector(`div[data-key="${e.which}"]`);
-  
+
   try {
     div.classList.add("playing");
-    setTimeout(function() {
+    setTimeout(function () {
       div.classList.remove("playing");
     }, 100);
 
-    div.style.position ='relative';
-    div.style.top += 0 + 'px'; 
+    div.style.position = 'relative';
+    div.style.top += 0 + 'px';
     div.style.top = parseInt(div.style.top) + 10 + 'px';
 
-    if(div.style.top == 100 + 'px'){
+    if (div.style.top == 100 + 'px') {
       div.style.top = '0px';
-  }
+    }
 
-  }
-  catch(err) {
+  } catch (err) {
     console.log("DIV not found")
-  }  
+  }
 }
 
 
@@ -51,52 +51,52 @@ function down(e) {
 
 
 // function play(e){
-  
+
 //   switch (e.key) {
 
 //     case 'a':
 //       let a = new Audio("sounds/clap.wav");
-    
+
 //       a.play();
 //       break;
 //     case 's':
 //       let s = new Audio("sounds/hihat.wav");
-     
+
 //       s.play();
 //       break;
 //     case 'd':
 //       let d = new Audio("sounds/kick.wav");
-  
+
 //       d.play();
 //       break;
 //     case 'f':
 //       let f = new Audio("sounds/openhat.wav");
-   
+
 //       f.play();
 //       break;
 //     case 'g':
 //       let g = new Audio("sounds/boom.wav");
-     
+
 //       g.play();
 //       break;
 //     case 'h':
 //       let h = new Audio("sounds/ride.wav");
-    
+
 //       h.play();
 //       break;
 //     case 'j':
 //       let j = new Audio("sounds/snare.wav");
-      
+
 //       j.play();
 //       break;
 //     case 'k':
 //       let k = new Audio("sounds/tom.wav");
-  
+
 //       k.play();
 //       break;
 //     case 'l':
 //       let l = new Audio("sounds/tink.wav");
- 
+
 //       l.play();
 //       break;
 
@@ -155,5 +155,5 @@ function down(e) {
 // if(div.style.top == 100 + 'px'){
 //   div.style.top = '0px';
 // }
- 
+
 // }
