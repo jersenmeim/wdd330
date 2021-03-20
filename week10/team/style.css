@@ -1,0 +1,39 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.quakeStyles {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.quakeStyles li {
+    margin: .5rem auto;
+    background-color: rgba(0, 0, 0, 0.171);
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    cursor: pointer;
+    max-width: 600px;
+}
+
+.quakeStyles div {
+    font-size: 0.8em;
+}
+
+.hidden {
+    display: none;
+}
+
+.red {
+    color: rgb(167, 0, 0);
+    text-align: center;
+}
+
+.nopointer {
+    cursor: default;
+}
+
+p {
+    text-align: center;
+}

@@ -44,6 +44,10 @@ const week = [{
   {
     title: "Week 10",
     link: "weekten.html",
+  },
+  {
+    title: "Final Project",
+    link: "project/index.html",
   }
 
 ];
