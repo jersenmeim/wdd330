@@ -6,6 +6,12 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.mystyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 h2 {
   text-align: left;
   margin: 2%;
@@ -41,10 +47,16 @@ h2 {
   cursor: pointer;
 }
 
-.container-output #output .title,
+.container-output #output .title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #820e0e;
+}
+
 .container-output #output-one .title {
   font-size: 40px;
   font-weight: bold;
+  color: #07530b;
 }
 
 .container-output #output .container,
@@ -59,9 +71,21 @@ h2 {
   margin: 6px 0;
 }
 
+.container-output #output .container p:nth-child(1),
+.container-output #output-one .container p:nth-child(1) {
+  opacity: 50%;
+}
+
 .container-output #output .container p:nth-child(2),
 .container-output #output-one .container p:nth-child(2) {
   cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.7em;
+}
+
+.container-output #output .container p:nth-child(2):hover,
+.container-output #output-one .container p:nth-child(2):hover {
+  color: #351717;
 }
 
 .container-output #output .container button,
@@ -76,12 +100,21 @@ h2 {
   color: white;
   margin: 2px 6px 0 0px;
   background-color: #861b1b;
+  cursor: pointer;
 }
 
 .container-output #output .container #complete,
 .container-output #output-one .container #complete {
   color: white;
   background-color: #1b861b;
+  cursor: pointer;
+}
+
+.container-output #output .container #delete-order:hover,
+.container-output #output .container #complete:hover,
+.container-output #output-one .container #delete-order:hover,
+.container-output #output-one .container #complete:hover {
+  opacity: 80%;
 }
 
 @media only screen and (max-width: 767px) {

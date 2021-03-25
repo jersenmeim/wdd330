@@ -204,9 +204,18 @@ function generateList(order) {
     const quantity = document.createElement('p');
     const deletebtn = document.createElement('button');
     const complete = document.createElement('button');
+    const buttonContainer = document.createElement('div');
 
     created.innerHTML = order.created;
-    name.innerHTML = "<b>Name:</b> " + order.name;;
+    name.innerHTML = order.name;
+
+
+    created.style.display = "none";
+    orderDescription.style.display = "none";
+    size.style.display = "none";
+    quantity.style.display = "none";
+    buttonContainer.style.display = "none";
+
 
     name.addEventListener('click', show);
 
@@ -214,8 +223,26 @@ function generateList(order) {
 
         const item = e.target;
         const div = item.parentElement;
-        const x = div.children;
-        console.log(item);
+        let x = div.children;
+
+
+        if (x[0].style.display === "none") {
+            x[0].style.display = "block";
+            x[2].style.display = "block";
+            x[3].style.display = "block";
+            x[4].style.display = "block";
+            x[5].style.display = "block";
+
+
+
+        } else {
+            x[0].style.display = "none";
+            x[2].style.display = "none";
+            x[3].style.display = "none";
+            x[4].style.display = "none";
+            x[5].style.display = "none";
+
+        }
     }
 
 
@@ -239,8 +266,9 @@ function generateList(order) {
     orderDetails.appendChild(orderDescription);
     orderDetails.appendChild(size);
     orderDetails.appendChild(quantity);
-    orderDetails.appendChild(deletebtn);
-    orderDetails.appendChild(complete);
+    buttonContainer.appendChild(deletebtn);
+    buttonContainer.appendChild(complete);
+    orderDetails.appendChild(buttonContainer);
 
     output.appendChild(orderDetails);
 }
@@ -256,12 +284,47 @@ function nowServingList(order) {
     const quantity = document.createElement('p');
     const deletebtn = document.createElement('button');
 
+    created.style.display = "none";
+    orderDescription.style.display = "none";
+    size.style.display = "none";
+    quantity.style.display = "none";
+    deletebtn.style.display = "none";
 
     created.innerHTML = order.created;
-    name.innerHTML = "<b>Name:</b> " + order.name;
+    name.innerHTML = order.name;
     orderDescription.innerHTML = "<b>Description:</b> " + order.orderDescription;
     size.innerHTML = "<b>Size:</b> " + order.size;
     quantity.innerHTML = "<b>Quantity:</b> " + order.quantity;
+
+    name.addEventListener('click', show);
+
+    function show(e) {
+
+        const item = e.target;
+        const div = item.parentElement;
+        let x = div.children;
+
+
+        if (x[0].style.display === "none") {
+            x[0].style.display = "block";
+            x[2].style.display = "block";
+            x[3].style.display = "block";
+            x[4].style.display = "block";
+            x[5].style.display = "block";
+
+
+
+
+        } else {
+            x[0].style.display = "none";
+            x[2].style.display = "none";
+            x[3].style.display = "none";
+            x[4].style.display = "none";
+            x[5].style.display = "none";
+
+
+        }
+    }
 
     deletebtn.setAttribute('id', "delete-order");
     deletebtn.addEventListener("click", removeOrders);
@@ -281,7 +344,7 @@ function nowServingList(order) {
 function removeOrder(order) {
 
     const item = order.target;
-    const div = item.parentElement;
+    const div = item.parentElement.parentElement;
     let orders;
 
     if (localStorage.getItem("orders") === null) {
@@ -331,7 +394,7 @@ function removeOrders(order) {
 function cloneToNowserving(e) {
 
     const item = e.target;
-    const div = item.parentElement;
+    const div = item.parentElement.parentElement;
 
     let orders;
 
