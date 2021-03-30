@@ -28,6 +28,8 @@ const options = {
 
 //functions
 
+
+//functions to generate order
 function addOrder(ev) {
     ev.preventDefault(); //to stop the form submitting
     let order = {
@@ -48,6 +50,8 @@ function addOrder(ev) {
     }
 }
 
+
+//functions to save orders to local storage
 function savelocalorders(order) {
     let orders;
     if (getfromLS('orders') === null) {
@@ -59,6 +63,7 @@ function savelocalorders(order) {
     writeToLS('orders', JSON.stringify(orders));
 }
 
+//functions to create form oders from a json data
 function createFormOrder() {
     let formOrder = document.createElement('form');
     formOrder.setAttribute('id', "menu-form")
@@ -150,14 +155,13 @@ function createFormOrder() {
     formOrder.appendChild(button);
 
     container.appendChild(formOrder);
-
-
-
-
-
 }
 
+
+//functions to get oders from localstorage
 function getOrder() {
+
+    //I have to local storage, one is for In Progress and one is for Now serving Section
     createFormOrder();
     getCompletedOrder();
 
@@ -176,6 +180,8 @@ function getOrder() {
 
 }
 
+
+//functions to get oders from localstorage (In Progress)
 function getCompletedOrder() {
 
     let complete;
@@ -193,6 +199,8 @@ function getCompletedOrder() {
 
 }
 
+
+//Create entirely the detail after the submission of form (In Progress)
 function generateList(order) {
     const orderDetails = document.createElement('div');
     orderDetails.setAttribute('class', 'container')
@@ -219,6 +227,8 @@ function generateList(order) {
 
     name.addEventListener('click', show);
 
+
+    //Function to show and hide description for each orders
     function show(e) {
 
         const item = e.target;
@@ -245,10 +255,6 @@ function generateList(order) {
         }
     }
 
-
-
-
-
     orderDescription.innerHTML = "<b>Description:</b> " + order.orderDescription;
     size.innerHTML = "<b>Size:</b> " + order.size;
     quantity.innerHTML = "<b>Quantity:</b> " + order.quantity;
@@ -273,6 +279,8 @@ function generateList(order) {
     output.appendChild(orderDetails);
 }
 
+
+//Create entirely the detail after the submission of form (Now Serving)
 function nowServingList(order) {
 
     const orderDetails = document.createElement('div');
@@ -298,6 +306,7 @@ function nowServingList(order) {
 
     name.addEventListener('click', show);
 
+    //Function to show and hide description for each orders
     function show(e) {
 
         const item = e.target;
@@ -341,6 +350,8 @@ function nowServingList(order) {
     output2.appendChild(orderDetails);
 }
 
+
+//remove orders from (In Progress)
 function removeOrder(order) {
 
     const item = order.target;
@@ -361,6 +372,8 @@ function removeOrder(order) {
     div.remove();
 }
 
+
+//remove orders from (Now Serving)
 function removeOrders(order) {
     const item = order.target;
     const div = item.parentElement;
@@ -391,6 +404,7 @@ function removeOrders(order) {
     div.remove();
 }
 
+//Move details from In Progress section to Now Serving Section
 function cloneToNowserving(e) {
 
     const item = e.target;
